@@ -6,7 +6,7 @@ const Post = props => (
   <Layout>
     <h1>{props.show.name}</h1>
     <p>{props.show.summary.replace(/<[/]?[pb]>/g, '')}</p>
-    {props.show.image ? <img src={props.show.image.original} /> : null}
+    {props.show.image ? <img src={props.show.image.medium} /> : null}
   </Layout>
 );
 
