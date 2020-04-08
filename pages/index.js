@@ -18,7 +18,7 @@ const Index = props => (
 );
 
 Index.getInitialProps = async function() {
-  const res = await fetch('https://api.tvmaze.com/search/shows?q=et');
+  const res = await fetch('https://api.tvmaze.com/search/shows?q=china');
   const data = await res.json();
 
   console.log(`Show data fetched. Count: ${data.length}`);
