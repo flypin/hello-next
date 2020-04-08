@@ -1,6 +1,7 @@
 import Layout from '../components/MyLayout';
 import Link from 'next/link';
-import fetch from 'isomorphic-unfetch';
+//import fetch from 'isomorphic-unfetch';
+import fetch from 'node-fetch';
 
 const Index = props => (
   <Layout>
@@ -14,6 +15,34 @@ const Index = props => (
         </li>
       ))}
     </ul>
+	
+	<style jsx>{`
+        h1,
+        a {
+
+        }
+
+        ul {
+          padding: 0;
+        }
+
+        li {
+          list-style: none;
+          margin: 20px 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: blue;
+        }
+
+        a:hover {
+          opacity: 0.6;
+        }
+      `}</style>
+	
+
+	
   </Layout>
 );
 
