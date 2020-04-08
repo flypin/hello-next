@@ -15,7 +15,7 @@ const Index = props => (
         </li>
       ))}
     </ul>
-	
+
 	<style jsx>{`
         h1,
         a {
@@ -40,9 +40,7 @@ const Index = props => (
           opacity: 0.6;
         }
       `}</style>
-	
 
-	
   </Layout>
 );
 
